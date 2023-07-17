@@ -29,6 +29,7 @@ Update bike_sales
 Set Day = Day(New_Date)
 
 
+--Create new column(Revenue,Cost and Profit)
 SELECT (Order_Quantity*Unit_Price) AS Revenue,(Order_Quantity*Unit_Cost) AS Cost
 FROM bike_sales
 ORDER BY (Order_Quantity*Unit_Price) DESC,(Order_Quantity*Unit_Cost)DESC
